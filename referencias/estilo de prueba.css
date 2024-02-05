@@ -1,0 +1,241 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	overflow-x: hidden;
+	background-color: aquamarine;
+}
+html{
+	font-size: 55%;
+}
+
+@font-face {
+	font-family: 'Silkscreen';
+	src: url('../assets/font/Silkscreen.ttf');
+}
+@font-face {
+	font-family: 'Kanit';
+	src: url('../assets/font/Kanit.ttf');
+}
+a{text-decoration: none;}
+
+.loguito{
+
+}
+
+.estiloLista{
+	font-size: 1rem;
+	font-family: 'Silkscreen';
+	text-align: center;
+
+}
+
+h2.tabla__encabezado{
+	font-family: tahoma;
+	font-size: 5rem; 
+	font-weight: bold;
+	font-style: italic;
+	height: 50px;
+	width: 300px;
+	text-align: center;
+	position: fixed;
+	top: 10px;
+	bottom: 10px;
+}
+
+.tabla__txtDer{
+	border-collapse: separate;
+	border-spacing: 50px 20px; 
+	font-size: 2rem; 
+	font-weight: normal; 
+	font-style: normal; 
+	font-family: 'Kanit';
+	height: 30px;
+	width: 200px;
+	text-align: center;
+
+}
+.tabla__txtCen{
+	border-collapse: separate;
+	border-spacing: 50px 20px;
+	font-style: italic;
+	font-family: 'Silkscreen';
+	font-size: 2rem;
+	text-align: center;
+	height: 30px;
+	width: 200px;
+
+}
+.tabla__txtIzq{
+	border-collapse: separate;
+	border-spacing: 50px 20px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 2rem;
+	font-weight: 500;
+	text-align: center; 
+	height: 30px;
+	width: 200px;
+}
+
+.estiloLista li {
+	list-style-type: none;
+}
+
+/* parallax */
+
+.parallax {
+
+background-image: url("../assets/img/header2.jpg");
+height: 600px;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;           
+
+	/* box modeling */
+	padding: 25px 50px;
+}
+
+.parallax h4 {
+	font-size: 5rem; 
+	text-align: center; 
+	background-color: rgba(255,255,100, 0.7);
+
+}
+.parallax p {
+	font-size: 2.5rem; 
+	text-align: center; 
+	background-color: rgba(255,255,255, 0.7);
+	text-transform: capitalize;
+
+}
+
+p{font-size: 5rem;}
+
+div	{
+	border: dashed 1px black;
+	font-size: 3.5rem; 
+}
+
+.estiloLista li {
+	display: inline; 
+	padding: 3px;
+	margin: 3px;
+}
+
+nav {
+height: 40px;
+background-color: red;
+}
+
+.publicidad {
+	width: 200px;
+	height: 50px;
+	color: white;
+	}
+
+	
+/*.publicidad {
+	position: fixed;
+	top: 50px;
+	left: 100px;
+	width: 1000px;
+	height: 500px;;
+
+}*/
+ul {
+   list-style: none;
+   font-size:0; 
+   color: black;
+}
+li {
+   display: inline-block;
+   width: 12%;
+   position: relative;
+   font-size: 2rem;
+}
+ul ul {
+   position: relative;
+   display: none;
+}
+ul ul li {
+   display: block;
+   width:125px;
+   padding: 8px;
+}
+ul ul li a {color: black;}
+
+ul li:hover ul {
+	position: absolute;
+   display:block;
+   background: yellow;
+}
+
+.parametroPosition{
+	display: inline;
+	overflow-y: hidden;
+}
+
+.cuadradoNaranja{
+	width: 300px;
+	height: 300px;
+	background-color: orange;
+	letter-spacing: 3px;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 35px;
+}
+
+.cuadradoNaranja:hover {
+	width: 300px;
+	height: 300px;
+	background-color: yellow;
+	background-position: center;
+	background-repeat: no-repeat;
+	letter-spacing: 3px;
+	padding: 35px;
+	color:black;
+}
+
+.cuadradoAmarillo{
+	width: 300px;
+	height: 300px;
+	background-color: yellow;
+	background-position: center;
+	background-repeat: no-repeat;
+	letter-spacing: 3px;
+	padding: 35px;
+}
+
+.cuadradoAmarillo:hover {
+	width: 300px;
+	height: 300px;
+	background-color: orange;
+	background-position: center;
+	background-repeat: no-repeat;
+	letter-spacing: 3px;
+	padding: 35px;
+	color:black;
+}
+
+h2.tabla_cuadrados{
+	font-family: tahoma;
+	font-size: 4rem;
+	font-weight: bold;
+	font-style: italic; 
+	padding: 35px;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+.piedepagina{
+	display: inline;
+	width: 400px;
+	font-family: tahoma;
+	font-size: 2rem;
+	font-weight: bold;
+	font-style: italic; 
+	text-align: center;
+}

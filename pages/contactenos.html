@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodriguez Propiedades</title>
+    <link rel="icon" href="assets/img/50x50logo.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/EstiloPropiedadesLR.css">
+
+</head>
+
+<body>
+    <div class="progress-bar" id="progressBar"></div>
+    <header>
+        <div class="cajalogo">
+            <a href="../index.html">
+                <img src="../assets/img/Logo-Casa-LR.png" alt="logo" style="max-height: 60px;"></a>
+        </div>
+        <div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="quienessomos.html">Quiénes somos</a></li>
+                    <li><a href="venta.html">Venta</a></li>
+                    <li><a href="alquiler.html">Alquiler</a></li>
+                    <li><a href="tasacion.html">Tasación</a></li>
+                    <li><a href="contactenos.html">Contáctenos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <body>
+
+        <h1 class="comienzo">Contáctenos</h1>
+
+        <section class="centrado">
+            <article>
+                <form action="#" class="FormularioContacto">
+
+                    <label for="nombreyapellido">Coloca tu nombre y apellido<br><div class="espaciadito"><input type="text" placeholder="NOMBRE y APELLIDO"></div></label>
+                    <label for="email">Coloca tu Email<br><div class="espaciadito"><input type="email" placeholder="nombre@gmail.com" name="usermail"></div></label>
+                    <label for="Edad">Coloca tu Edad<br><div class="espaciadito"><input max="109" min="18" name="age" step="1" type="number" value="18" placeholder="EDAD"></div></label>
+                    <label for="Genero" >Coloca tu Género<br><div class="espaciadito"><select name="gender">
+                        <option selected="selected" value="none"></option>
+                        <option value value="male">Masculino</option>
+                        <option value="female">Femenino</option>
+                        <option value="female">No binario</option>
+                    </select></div></label>
+                    <label for="Observaciones"> Observaciones <br><div class="espaciadito"><textarea placeholder="Observaciones"></textarea></div></label>
+                    <label><input name="terms" type="checkbox" value="tandc"> ¿Es cliente nuestro?</label>
+                    <div>
+                        <input type="submit" value="ENVIAR INFO">
+                        <input type="reset" value="BORRAR">
+                    </div>
+                </form>
+            </article>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Rodriguez Propiedades. Todos los derechos reservados.</p>
+        </footer>
+        <script>
+            // Función para actualizar la barra de progreso al hacer scroll
+            function updateProgressBar() {
+                var scroll = document.documentElement.scrollTop || document.body.scrollTop;
+                var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                var scrolled = (scroll / height) * 100;
+                document.getElementById('progressBar').style.width = scrolled + '%';
+            }
+
+            // Evento de scroll para llamar a la función
+            window.onscroll = function () {
+                updateProgressBar();
+            };
+        </script>
+    </body>
+
+</html>

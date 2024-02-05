@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodriguez Propiedades</title>
+    <link rel="icon" href="assets/img/50x50logo.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/EstiloPropiedadesLR.css">
+</head>
+
+<body>
+    <div class="progress-bar" id="progressBar"></div>
+    <header>
+        <div class="cajalogo">
+            <a href="../index.html">
+                <img src="../assets/img/Logo-Casa-LR.png" alt="logo" style="max-height: 60px;"></a>
+        </div>
+        <div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="quienessomos.html">Quiénes somos</a></li>
+                    <li><a href="venta.html">Venta</a></li>
+                    <li><a href="alquiler.html">Alquiler</a></li>
+                    <li><a href="tasacion.html">Tasación</a></li>
+                    <li><a href="contactenos.html">Contáctenos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<h1 class="comienzo">Venta</h1>
+
+<section class="centrado">
+    <div class="GridContainer">
+        <div class="PrimerItem">VENTA 1</div>
+        <div>VENTA 2</div>
+        <div class="TercerItem">VENTA 3</div>
+        <div>VENTA 4</div>
+        <div>VENTA 5</div>
+        <div>VENTA 6</div>
+        <div>VENTA 7</div>
+        <div>VENTA 8</div>
+        <div class="NovenoItem">VENTA 9</div>
+    </div>
+</section>
+
+<div class="centrado">
+    <nav aria-label="Page navigation example" class="espaciadito">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<footer>
+    <p>&copy; 2024 Rodriguez Propiedades. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+    // Función para actualizar la barra de progreso al hacer scroll
+    function updateProgressBar() {
+        var scroll = document.documentElement.scrollTop || document.body.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (scroll / height) * 100;
+        document.getElementById('progressBar').style.width = scrolled + '%';
+    }
+
+    // Evento de scroll para llamar a la función
+    window.onscroll = function () {
+        updateProgressBar();
+    };
+</script>
+
+</body>
+</html>
