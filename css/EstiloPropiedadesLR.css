@@ -1,5 +1,4 @@
-html,
-body {
+html, body {
     font-family: 'Josefin Sans', sans-serif;
     margin: 0;
     padding: 0;
@@ -7,6 +6,13 @@ body {
     background-color: #f4f4f4;
     overflow-x: hidden;
 }
+
+/*
+@media only screen and (max-width: 480px) {
+    background-color: green;
+    overflow-x: hidden;
+    }
+*/
 
 .progress-bar {
     position: fixed;
@@ -50,6 +56,7 @@ header div {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-shadow: 0px 0px 1px  #272727;
 }
 
 .introduccion2 {
@@ -58,12 +65,11 @@ header div {
 }
 
 .introduccion h1 {
-    font-size: 3em;
+    font-size: 3.75em;
 }
 
 .introduccion p {
-    font-size: 1.5em;
-    margin-top: 10px;
+    font-size: 2.25em;
 }
 
 .cajalogo {
@@ -207,9 +213,13 @@ footer p {
 }
 
 .info {
-    padding: 20px;
+    margin-bottom: 10px;
     text-align: center;
-    margin-bottom: 60px;
+}
+
+.info2 {
+    margin-bottom: 50px;
+    text-align: center;
 }
 
 .info img {
@@ -302,21 +312,27 @@ footer p {
 .espaciadito2:hover {
     background: #f60000;
     color: #fff;
-    /* Rojo oscuro para el color de resaltado */
-    color: #fff;
-    /* Rojo oscuro para el color de resaltado */
     padding-left: +1.5%;
-    /* Ajustamos también el padding del li en el estado de hover */
     padding-right: +1.5%;
-    /* Ajustamos también el padding del li en el estado de hover */
 }
 
 .espaciadito3:hover {
     background: #f60000;
     color: #fff;
-    /* Rojo oscuro para el color de resaltado */
     padding-left: +1.5%;
-    /* Ajustamos también el padding del li en el estado de hover */
     padding-right: +1.5%;
-    /* Ajustamos también el padding del li en el estado de hover */
+}
+
+
+.espaciadito4 {
+    transition: 1.0s ease-in-out;
+    transition: color 0.3s ease-in-out;
+    transition: padding 0.3s ease-in-out;
+}
+
+.espaciadito4:hover {
+    background: #f60000;
+    color: #fff;
+    padding-left: +1.5%;
+    padding-right: +1.5%;
 }
