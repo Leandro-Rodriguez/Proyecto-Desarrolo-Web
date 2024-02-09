@@ -5,14 +5,18 @@ html, body {
     box-sizing: border-box;
     background-color: #f4f4f4;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 /*
 @media only screen and (max-width: 480px) {
-    background-color: green;
-    overflow-x: hidden;
-    }
-*/
+    body, header, nav {
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+}*/
 
 .progress-bar {
     position: fixed;
@@ -222,7 +226,7 @@ footer p {
     text-align: center;
 }
 
-.info img {
+.info img, .info2 img {
     max-width: 100%;
     border-radius: 10px;
     margin-bottom: 10px;
