@@ -49,10 +49,11 @@ header div {
     align-items: center;
 }
 
+
 .introduccion {
     height: 100vh;
     background-image: url("../assets/img/introduccion.jpg");
-    background-size: cover;
+    background-size: auto 100vh;
     background-position: center;
     color: #fff;
     text-align: center;
@@ -94,10 +95,10 @@ header div {
     background: #c40000;
 }
 
-h1 {
+h2 {
     text-align: center;
     padding: 1rem;
-    font-size: 2em;
+    font-size: 1em;
     color: black;
 }
 
@@ -180,24 +181,26 @@ ul li:hover a {
     display: flex;
     justify-content: space-around;
     margin: 10px;
+    gap: 10px;
 }
 
 article {
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 10px;
-    padding: 15px;
+    padding: 10px;
     width: 30%;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+
     text-align: center;
     /* Centro el contenido */
 }
 
 .propiedades img {
-    max-width: 100%;
+    max-width: 90%;
+    height: auto;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 footer {
@@ -352,3 +355,101 @@ footer p {
     padding-left: +1.5%;
     padding-right: +1.5%;
 }
+
+/* ... (Tus estilos existentes) ... */
+
+/* Estilos para el ícono de hamburguesa */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+
+  }
+
+  .bar {
+
+    background: linear-gradient(to right, #f60000, #c40000);
+    flex-direction: column;
+    width: 100vw;
+
+  }
+  
+  /* Media query para dispositivos con un ancho máximo de 768px */
+  @media (max-width: 810px) {
+
+    header {
+        background: linear-gradient(to right, #ff0000, #cc0000);
+        /* Degradado de rojo a rojo oscuro */
+        color: #fff;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 50px;
+        position: fixed;
+        width: 100%;
+        z-index: 1010;
+    }
+
+    .menu {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .hamburger-menu {
+      display: flex;
+    }
+
+    .info img, .info2 img {
+        width: 90%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    .introduccion h1 {
+        font-size: 2.5em;
+    }
+    
+    .introduccion p {
+        font-size: 1.25em;
+    }
+
+}
+
+/*PRUEBA CSS AHMBURGUER */
+
+  .topnav {
+
+    background-color: #333;
+    position: relative;
+
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    z-index: 5001;
+  }
+  
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    z-index: 5000;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }

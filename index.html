@@ -21,10 +21,16 @@
     <header>
         <div class="cajalogo">
             <a href="#">
-            <img src="assets/img/Logo-Casa-LR.png" alt="logo" style="max-height: 60px;"></a>
+            <img src="assets/img/Logo-Casa-LR.png" alt="logo" style="max-height: 50px; margin: 5px;"></a>
         </div>
         <div>
-            <nav>
+            <nav class="menu">
+                <!-- <div class="hamburger-menu">
+                    <div class="bar"></div>
+                    <div class="bar"><a href="pages/quienessomos.html">Quiénes somos</a></div>
+                    <div class="bar"></div>
+                </div> -->
+
                 <ul class="menu">
                     <li><a href="#">Home</a></li>
                     <li><a href="pages/quienessomos.html">Quiénes somos</a></li>
@@ -35,6 +41,22 @@
                 </ul>
             </nav>
         </div>
+
+        <div class="hamburger-menu">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i></a>
+            <div class="bar">
+                <a href="#">Home</a>
+                <a href="pages/quienessomos.html">Quiénes somos</a>
+                <a href="pages/venta.html">Venta</a>
+                <a href="pages/alquiler.html">Alquiler</a>
+                <a href="pages/tasacion.html">Tasación</a>
+                <a href="pages/contactenos.html">Contáctenos</a>
+            </div>
+
+        </div>
+
+<!-- Top Navigation Menu -->
     </header>
 
     
@@ -43,7 +65,7 @@
         <p>Descubre las mejores opciones inmobiliarias con nosotros.</p>
     </section>
 
-    <h1>- LAS PROPIEDADES DE TUS SUEÑOS TE ESTÁN ESPERANDO -</h1>
+    <h2>- LAS PROPIEDADES DE TUS SUEÑOS TE ESTÁN ESPERANDO -</h2>
 
     <section class="propiedades">
         <article class="espaciadito4">
@@ -86,6 +108,15 @@
     </footer>
 
     <script>
+
+        function myFunction() {
+            var x = document.getElementById("myLi(x    .style.display === "bloc) {
+                x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+
         // Función para actualizar la barra de progreso al hacer scroll
         function updateProgressBar() {
             var scroll = document.documentElement.scrollTop || document.body.scrollTop;
@@ -93,7 +124,7 @@
             var scrolled = (scroll / height) * 100;
             document.getElementById('progressBar').style.width = scrolled + '%';
         }
-    
+
         // Evento de scroll para llamar a la función
         window.onscroll = function () {
             updateProgressBar();
