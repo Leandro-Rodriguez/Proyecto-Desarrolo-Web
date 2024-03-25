@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gestionamos y promovemos el desarrollo inmobiliario, además de las tareas de tasación, alquiler y venta de propiedades">
-    <meta name="keywords" content="Desarrollo inmobiliario, tasación, alquiler, venta de propiedades, casas, cocheras, terrenos, construcción en pozo, oportunidades">
-    <meta property="og:description" content="Gestionamos y promovemos el desarrollo inmobiliario, además de las tareas de tasación, alquiler y venta de propiedades">
+    <meta name="description"
+    content="Gestionamos y promovemos el desarrollo inmobiliario, además de las tareas de tasación, alquiler y venta de propiedades">
+    <meta name="keywords"
+    content="Desarrollo inmobiliario, tasación, alquiler, venta de propiedades, casas, cocheras, terrenos, construcción en pozo, oportunidades">
+    <meta property="og:description"
+    content="Gestionamos y promovemos el desarrollo inmobiliario, además de las tareas de tasación, alquiler y venta de propiedades">
     <meta property="og:title" content="Desarrollo inmobiliario, tasación, alquiler y venta de propiedades">
     <title>Rodriguez Propiedades</title>
     <link rel="icon" href="assets/img/50x50logo.ico" type="image/x-icon">
@@ -21,17 +24,11 @@
     <header>
         <div class="cajalogo">
             <a href="#">
-            <img src="assets/img/Logo-Casa-LR.png" alt="logo" style="max-height: 50px; margin: 5px;"></a>
+                <img src="assets/img/Logo-Casa-LR.png" alt="logo" class="imgcajalogo"></a>
         </div>
-        <div>
-            <nav class="menu">
-                <!-- <div class="hamburger-menu">
-                    <div class="bar"></div>
-                    <div class="bar"><a href="pages/quienessomos.html">Quiénes somos</a></div>
-                    <div class="bar"></div>
-                </div> -->
-
-                <ul class="menu">
+        <div class="menu">
+            <nav>
+                <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="pages/quienessomos.html">Quiénes somos</a></li>
                     <li><a href="pages/venta.html">Venta</a></li>
@@ -42,24 +39,28 @@
             </nav>
         </div>
 
-        <div class="hamburger-menu">
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i></a>
-            <div class="bar">
-                <a href="#">Home</a>
-                <a href="pages/quienessomos.html">Quiénes somos</a>
-                <a href="pages/venta.html">Venta</a>
-                <a href="pages/alquiler.html">Alquiler</a>
-                <a href="pages/tasacion.html">Tasación</a>
-                <a href="pages/contactenos.html">Contáctenos</a>
+        <div class="movil">
+            <div>
+                <input type="checkbox" id="btn_menu">
+                <label for="btn_menu" class="btn_menu flex_column">
+                    <span id="btn_span_1" class="btn_span"></span>
+                    <span id="btn_span_2" class="btn_span"></span>
+                    <span id="btn_span_3" class="btn_span"></span>
+                </label>
+                <div class="container_flex">
+                    <ul class="container_menu flex_column">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="pages/quienessomos.html">Quiénes somos</a></li>
+                        <li><a href="pages/venta.html">Venta</a></li>
+                        <li><a href="pages/alquiler.html">Alquiler</a></li>
+                        <li><a href="pages/tasacion.html">Tasación</a></li>
+                        <li><a href="pages/contactenos.html">Contáctenos</a></li>
+                    </ul>
+                </div>
             </div>
 
-        </div>
-
-<!-- Top Navigation Menu -->
+            <!-- Top Navigation Menu -->
     </header>
-
-    
     <section class="introduccion">
         <h1 class="titulo1">Bienvenidos a Rodriguez Propiedades</h1>
         <p>Descubre las mejores opciones inmobiliarias con nosotros.</p>
@@ -87,7 +88,8 @@
 
     <div class="info">
         <h2>Descubre nuestras propiedades exclusivas</h2>
-        <p>En Rodriguez Propiedades, nos esforzamos por ofrecer las mejores opciones inmobiliarias. Contáctanos para obtener más información.</p>
+        <p>En Rodriguez Propiedades, nos esforzamos por ofrecer las mejores opciones inmobiliarias. Contáctanos para
+            obtener más información.</p>
         <img src="assets/img/casa1.jpg" alt="Propiedades Exclusivas">
     </div>
 
@@ -108,7 +110,6 @@
     </footer>
 
     <script>
-
         // Función para actualizar la barra de progreso al hacer scroll
         function updateProgressBar() {
             var scroll = document.documentElement.scrollTop || document.body.scrollTop;
@@ -116,11 +117,10 @@
             var scrolled = (scroll / height) * 100;
             document.getElementById('progressBar').style.width = scrolled + '%';
         }
-
         // Evento de scroll para llamar a la función
         window.onscroll = function () {
             updateProgressBar();
-        };
+        }
     </script>
 </body>
 </html>
