@@ -95,10 +95,6 @@ header div {
     transition: 1.0s ease-in-out;
 }
 
-.cajalogo:hover {
-    background: #a5a5a5;
-}
-
 h2 {
     text-align: center;
     padding: 1rem;
@@ -367,6 +363,7 @@ footer p {
     padding-right: +1.5%;
 }
 
+
 .espaciadito3:hover {
     background: #f60000;
     color: #fff;
@@ -521,6 +518,7 @@ footer p {
         background: white;
         border-radius: 30px;
         box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+        
     }
 
     .btn_span {
@@ -586,3 +584,57 @@ footer p {
     }
 
 }
+
+/* PRUEBA */ /* PRUEBA */ /* PRUEBA */ /* PRUEBA */ /* PRUEBA */ /* PRUEBA */
+/* PRUEBA */ /* PRUEBA */ /* PRUEBA */ /* PRUEBA */ /* PRUEBA */ /* PRUEBA */
+/* PRUEBA */ /* PRUEBA */ /* PRUEBA */ /* PRUEBA */ /* PRUEBA */ /* PRUEBA */
+
+element.style {    
+    bottom: 14px;
+        right: 16px;
+        box-sizing: border-box;
+        position: fixed;
+        z-index: 16000160;
+        direction: ltr;
+        text-align: right;
+    }
+    
+    #gb-widget-8071 > * {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        box-sizing: border-box }
+
+    .hKYcqG {
+        display: flex;
+        margin: 7px;
+        position: relative;
+        -webkit-box-pack: end;
+        justify-content: flex-end;
+    }
+
+    .kjRUkx {
+        order: 2;
+        position: relative;
+    }
+
+    .jRodDz {
+        flex-shrink: 0;
+        opacity: 1;
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        display: block;
+        order: 2;
+        padding: 5px;
+        box-sizing: border-box;
+        cursor: pointer;
+        overflow: hidden;
+        box-shadow: rgba(136, 136, 136, 0.33) 0px 2px 10px;
+        transition: all 0.5s ease 0s;
+        position: relative;
+        z-index: 200;
+        border: 3.375px solid rgb(255, 255, 255);
+        animation: 2s ease 1s infinite normal none running hJgPhc;
+        text-decoration: none;
+        background-color: rgb(255, 13, 0);
+    }
+    
