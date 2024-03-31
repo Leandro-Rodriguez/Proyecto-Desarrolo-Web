@@ -214,7 +214,7 @@ article {
 }
 
 footer {
-    background-color: #454545;
+    background-color: #636363;
     color: #fff;
     text-align: center;
     padding: 0.5em;
@@ -404,10 +404,16 @@ footer p {
     width: 100vw;
 }
 
-
+/* MOBILE */ /* MOBILE */ /* MOBILE */ /* MOBILE */ /* MOBILE */ /* MOBILE */
+/* MOBILE */ /* MOBILE */ /* MOBILE */ /* MOBILE */ /* MOBILE */ /* MOBILE */
+/* MOBILE */ /* MOBILE */ /* MOBILE */ /* MOBILE */ /* MOBILE */ /* MOBILE */
 
 /* Media query para dispositivos con un ancho máximo de 768px */
 @media (max-width: 768px) {
+
+    body{
+        z-index: 3000;
+    }
 
     header {
         background: linear-gradient(to right, #ff0000, #cc0000);
@@ -420,7 +426,7 @@ footer p {
         height: 50px;
         position: fixed;
         width: 100%;
-        z-index: 1010;
+        z-index: 2500;
     }
 
     .progress-bar {
@@ -429,7 +435,7 @@ footer p {
 
     .cajalogo {
         position: absolute;
-        z-index: 2000;
+        z-index: 2510;
         left: 20px;
         top: 10px;
     }
@@ -502,7 +508,7 @@ footer p {
         position: fixed;
         top: 10px;
         right: 20px;
-        z-index: 3;
+        z-index: 50;
     }
 
     #btn_menu {
@@ -557,7 +563,7 @@ footer p {
         width: 100vw;
         height: 100vh;
         overflow-x: hidden;
-        z-index: 2;
+        z-index: 2400;
     }
 
     .container_menu {
@@ -568,11 +574,15 @@ footer p {
         height: 89vh;
         background: linear-gradient(to right, #ff0000, #cc0000);
         transition: all .5s ease;
-        z-index: 10;
+        z-index: 2450;
     }
 
     #btn_menu:checked~.container_flex .container_menu {
         right: 0;
+    }
+
+    #btn_menu:not(:checked)~.container_flex {
+    display: none;
     }
 
 }
